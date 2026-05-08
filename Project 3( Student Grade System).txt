@@ -1,0 +1,25 @@
+# 🟡 Project 3: Student Grade System
+
+Student_Name = input("Enter student name :-")
+Physics = int(input("Enter physics marks :-"))
+Chemistry = int(input("Enter chemistry marks :-"))
+Mathematics = int(input("Enter mathematics marks :-"))
+Total = Physics + Chemistry + Mathematics
+Percentage = float(Total/300*100)
+print("Total = " , Total)
+print("Percentage = " , Percentage)
+
+if Physics >= 35 and Chemistry >= 35 and Mathematics >= 35:
+    print("Result: PASS")
+    if Percentage >= 95:
+        print("Grade : (A)")
+    elif Percentage >= 80:
+        print("Grade : (B)")
+    elif Percentage >= 70:
+        print("Grade : (C)")
+    elif Percentage >= 30:
+        print("Grade (D)")
+else:
+    print("Fail!!")
+
+
